@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body style="background:linear-gradient(135deg,#003366,#00BCD4,#00C853);">
+
+<div class="login-box">
+
+    <h2>⚡ Admin Login</h2>
+
+    <p style="margin-bottom:20px;color:#666;">
+        Smart Electricity Billing System
+    </p>
+
+    <form action="/admin-dashboard" method="get">
+
+        <input type="text" placeholder="Enter Username" required>
+
+        <input type="password" placeholder="Enter Password" required>
+
+        <button type="submit">🔐 Login</button>
+
+    </form>
+
+    <br>
+
+    <a href="/">
+        <button style="background:#ff9800;">🏠 Back to Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>

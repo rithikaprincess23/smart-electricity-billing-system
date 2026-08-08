@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meter Reader Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="reader-dashboard">
+
+
+
+<div class="reader-top">
+
+
+<h1>👨‍🔧 Welcome Meter Reader</h1>
+
+<p>
+Manage meter reading tasks easily
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="reader-cards">
+
+
+
+<div class="reader-dash-card blue-card">
+
+
+<h2>👥</h2>
+
+<h3>Assigned Consumers</h3>
+
+<p>25 Consumers</p>
+
+
+</div>
+
+
+
+
+
+<div class="reader-dash-card green-card">
+
+
+<h2>✅</h2>
+
+<h3>Completed Reading</h3>
+
+<p>18 Completed</p>
+
+
+</div>
+
+
+
+
+
+<div class="reader-dash-card orange-card">
+
+
+<h2>⏳</h2>
+
+<h3>Pending Reading</h3>
+
+<p>7 Pending</p>
+
+
+</div>
+
+
+
+
+
+<div class="reader-dash-card purple-card">
+
+
+<h2>📊</h2>
+
+<h3>Submit Reading</h3>
+
+<a href="/meter-reading">
+
+<button>
+Enter Reading
+</button>
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="reading-status">
+
+
+<h2>📋 Reading Status</h2>
+
+
+
+<table class="consumer-table">
+
+
+<tr>
+
+<th>Consumer No</th>
+<th>Name</th>
+<th>Area</th>
+<th>Status</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>0901256348</td>
+<td>Ramesh Kumar</td>
+<td>Sivakasi</td>
+<td>Completed</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>0901387421</td>
+<td>Priya Devi</td>
+<td>Sivakasi</td>
+<td>Pending</td>
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</body>
+
+</html>

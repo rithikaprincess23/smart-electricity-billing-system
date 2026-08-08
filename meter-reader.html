@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meter Reader</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+<div class="sidebar">
+
+<h2>⚡ Smart EB</h2>
+
+<a href="/admin-dashboard">🏠 Dashboard</a>
+<a href="/add-consumer">👥 Add Consumer</a>
+<a href="/view-consumer">📋 View Consumer</a>
+<a href="/house">🏠 House</a>
+<a href="/office">🏢 Office</a>
+<a href="/factory">🏭 Factory</a>
+<a href="/meter-reader">👷 Meter Reader</a>
+<a href="/meter-reading">📊 Meter Reading</a>
+<a href="/bill-calculation">💰 Bill Calculation</a>
+<a href="/payment">💳 Payment</a>
+<a href="/">🚪 Logout</a>
+
+</div>
+
+<div class="dashboard-content">
+
+<div class="reader-header">
+
+<h1>👨‍🔧 Meter Reader Management</h1>
+
+<p>
+Manage electricity meter reading staff details
+</p>
+
+</div>
+
+<div class="reader-container">
+
+<div class="reader-card">
+<img src="/static/images/reader1.jpg">
+<h3>P.Karthik Raj</h3>
+<p><b>Employee ID:</b> 3981025</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Sivakasi Town</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876542830</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader2.jpg">
+<h3>S.Praveen Kumar</h3>
+<p><b>Employee ID:</b> 3670992</p>
+<p><b>Qualification:</b> ITI Electrical</p>
+<p><b>Area:</b> Thiruthangal</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9201543211</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader3.jpg">
+<h3>M.Suresh Kumar</h3>
+<p><b>Employee ID:</b> 9275871</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Satchiyapuram</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543212</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader4.jpg">
+<h3>D.Arun Prakash</h3>
+<p><b>Employee ID:</b> 9348436</p>
+<p><b>Qualification:</b> B.E Electrical</p>
+<p><b>Area:</b> Anna Nagar</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9747093213</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader5.jpg">
+<h3>K.Vignesh Kumar</h3>
+<p><b>Employee ID:</b> 9702917</p>
+<p><b>Qualification:</b> Diploma EEE</p>
+<p><b>Area:</b> Gandhi Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876588909</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader6.jpg">
+<h3>V.Ramesh Babu</h3>
+<p><b>Employee ID:</b> 8826645</p>
+<p><b>Qualification:</b> ITI Electrical</p>
+<p><b>Area:</b> Kamarajar Street</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543355</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader7.jpg">
+<h3>R.Senthil Kumar</h3>
+<p><b>Employee ID:</b> 6873284</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Viswanatham Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876537329</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader8.jpg">
+<h3>K.Manikandan</h3>
+<p><b>Employee ID:</b> 8724759</p>
+<p><b>Qualification:</b> B.Tech EEE</p>
+<p><b>Area:</b> Reserve Line</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876529117</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader9.jpg">
+<h3>A.Harish Kumar</h3>
+<p><b>Employee ID:</b> 4927203</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Pudur</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876542783</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader10.jpg">
+<h3>P.Ajith Kumar</h3>
+<p><b>Employee ID:</b> 4728562</p>
+<p><b>Qualification:</b> ITI Electrician</p>
+<p><b>Area:</b> Amathur Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876518219</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader11.jpg">
+<h3>V.Vimal Raj</h3>
+<p><b>Employee ID:</b> 9348187</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Parasakthi Colony</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543281</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader12.jpg">
+<h3>M.Gokul Prasad</h3>
+<p><b>Employee ID:</b> 8379524</p>
+<p><b>Qualification:</b> ITI Electrician</p>
+<p><b>Area:</b> Railway Feeder Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543221</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader13.jpg">
+<h3>K.Dinesh Kumar</h3>
+<p><b>Employee ID:</b> 2923079</p>
+<p><b>Qualification:</b> Diploma EEE</p>
+<p><b>Area:</b> PSV Colony</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9823820122</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader14.jpg">
+<h3>P.Raja Sekar</h3>
+<p><b>Employee ID:</b> 3896815</p>
+<p><b>Qualification:</b> B.E Electrical</p>
+<p><b>Area:</b> Bharathi Nagar</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9832743902</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader15.jpg">
+<h3>M.Murugan</h3>
+<p><b>Employee ID:</b> 8472246</p>
+<p><b>Qualification:</b> ITI Electrical</p>
+<p><b>Area:</b> Naranapuram Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9827828810</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader16.jpg">
+<h3>P.Balaji</h3>
+<p><b>Employee ID:</b> 3781451</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Kitchanayakkanpatti</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9342831603</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader17.jpg">
+<h3>S.Naveen Raj</h3>
+<p><b>Employee ID:</b> 2381738</p>
+<p><b>Qualification:</b> Diploma EEE</p>
+<p><b>Area:</b> Lakshmi Nagar</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 987658926</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader18.jpg">
+<h3>M.Santhosh</h3>
+<p><b>Employee ID:</b> 3687342</p>
+<p><b>Qualification:</b> B.Tech Electrical</p>
+<p><b>Area:</b> Old Bus Stand</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876883690</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader19.jpg">
+<h3>A.Prakash</h3>
+<p><b>Employee ID:</b> 8395963</p>
+<p><b>Qualification:</b> ITI Electrician</p>
+<p><b>Area:</b> Chokkampatti Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543792</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader20.jpg">
+<h3>T.Selva Kumar</h3>
+<p><b>Employee ID:</b> 4892894</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Sengamalanachiarpuram</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543929</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader21.jpg">
+<h3>N.Aravind Kumar</h3>
+<p><b>Employee ID:</b> 9226418</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> K.R. Nagar</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9837923230</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader22.jpg">
+<h3>A.Vinoth Raj</h3>
+<p><b>Employee ID:</b> 8929582</p>
+<p><b>Qualification:</b> ITI Electrician</p>
+<p><b>Area:</b> Muthuramalingapuram</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543288</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader23.jpg">
+<h3>V.Ganesh Kumar</h3>
+<p><b>Employee ID:</b> 9213726</p>
+<p><b>Qualification:</b> Diploma EEE</p>
+<p><b>Area:</b> Coronation Colony</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543232</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="reader-card">
+<img src="/static/images/reader24.jpg">
+<h3>K.Ranjith</h3>
+<p><b>Employee ID:</b> 2788045</p>
+<p><b>Qualification:</b> B.E Electrical</p>
+<p><b>Area:</b> AKP Nagar</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9874633233</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader25.jpg">
+<h3>M.Surya Prakash</h3>
+<p><b>Employee ID:</b> 7395189</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> PKN Colony</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876549234</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="/static/images/reader26.jpg">
+<h3>P.Hariharan</h3>
+<p><b>Employee ID:</b> 9202671</p>
+<p><b>Qualification:</b> ITI Electrical</p>
+<p><b>Area:</b> Velayutham Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543789</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="{{ url_for('static', filename='images/reader27.jpg') }}">
+<h3>K.Jegan</h3>
+<p><b>Employee ID:</b> 7387134</p>
+<p><b>Qualification:</b> B.Tech Electrical</p>
+<p><b>Area:</b> Velayutham Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876542735</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="{{ url_for('static', filename='images/reader28.jpg') }}">
+<h3>N.Ravikumar</h3>
+<p><b>Employee ID:</b> 2849036</p>
+<p><b>Qualification:</b> Diploma Electrical</p>
+<p><b>Area:</b> Kitchanayakkanpatti</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876542236</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="{{ url_for('static', filename='images/reader29.jpg') }}">
+<h3>M.Muthukumar</h3>
+<p><b>Employee ID:</b> 999174</p>
+<p><b>Qualification:</b> ITI Electrician</p>
+<p><b>Area:</b> Anaiyur Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876283237</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+<div class="reader-card">
+<img src="{{ url_for('static', filename='images/reader30.jpg') }}">
+<h3>S.Shanmugam</h3>
+<p><b>Employee ID:</b> 824285</p>
+<p><b>Qualification:</b> B.E Electrical</p>
+<p><b>Area:</b> Vembakottai Road</p>
+<p><b>Assigned Consumers:</b> 4</p>
+<p><b>Phone:</b> 9876543228</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

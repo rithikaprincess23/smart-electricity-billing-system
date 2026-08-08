@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="admin-layout">
+
+<div class="sidebar">
+
+<h2>⚡ Smart EB</h2>
+
+<a href="/admin-dashboard">🏠 Dashboard</a>
+<a href="/add-consumer">👥 Add Consumer</a>
+<a href="/view-consumer">📋 View Consumer</a>
+<a href="/house">🏠 House</a>
+<a href="/office">🏢 Office</a>
+<a href="/factory">🏭 Factory</a>
+<a href="/meter-reader">👷 Meter Reader</a>
+<a href="/meter-reading">📊 Meter Reading</a>
+<a href="/bill-calculation">💰 Bill Calculation</a>
+<a href="/payment">💳 Payment</a>
+<a href="/reports">📈 Reports</a>
+<a href="/">🚪 Logout</a>
+
+</div>
+
+<div class="dashboard-content">
+
+
+
+<div class="payment-header">
+
+<h1>💳 Electricity Bill Payment</h1>
+
+<p>
+Manage consumer bill payments securely
+</p>
+
+</div>
+
+
+
+
+<div class="form-box">
+
+
+<form>
+
+
+<label>Consumer Number</label>
+
+<input type="text" placeholder="Enter Consumer Number">
+
+
+
+<label>Consumer Name</label>
+
+<input type="text" placeholder="Enter Consumer Name">
+
+
+
+<label>Bill Amount</label>
+
+<input type="number" placeholder="Enter Bill Amount">
+
+
+
+<label>Payment Date</label>
+
+<input type="date">
+
+
+
+<label>Payment Method</label>
+
+
+<select>
+
+<option>Select Payment Method</option>
+
+<option>UPI</option>
+
+<option>Debit Card</option>
+
+<option>Credit Card</option>
+
+<option>Cash</option>
+
+</select>
+
+
+
+
+<label>Payment Status</label>
+
+
+<select>
+
+<option>Select Status</option>
+
+<option>Paid</option>
+
+<option>Pending</option>
+
+</select>
+
+
+
+
+<button type="button" onclick="location.href='/payment-success'">
+💳 Confirm Payment
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
