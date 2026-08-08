@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Consumer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+<div class="sidebar">
+
+<h2>⚡ Smart EB</h2>
+
+<a href="/dashboard-home">🏠 Dashboard</a>
+<a href="/add-consumer">👥 Add Consumer</a>
+<a href="/view-consumer">📋 View Consumer</a>
+<a href="/house">🏠 House</a>
+<a href="/office">🏢 Office</a>
+<a href="/factory">🏭 Factory</a>
+<a href="/meter-reader">👨‍🔧 Meter Reader</a>
+<a href="/meter-reading">📊 Meter Reading</a>
+<a href="/bill-calculation">💰 Bill Calculation</a>
+<a href="/payment">💳 Payment</a>
+<a href="/reports">📈 Reports</a>
+<a href="/">🚪 Logout</a>
+
+</div>
+
+<div class="dashboard-content">
+
+<div class="table-header">
+<h1>📋 Consumer Details</h1>
+<p>All Registered Electricity Consumers</p>
+</div>
+
+<table class="consumer-table">
+
+<tr>
+<th>Consumer No</th>
+<th>Consumer Name</th>
+<th>Door No</th>
+<th>Address</th>
+<th>Area</th>
+<th>Meter No</th>
+<th>Category</th>
+<th>Status</th>
+</tr>
+
+{% for consumer in consumers %}
+
+<tr>
+<td>{{ consumer.consumer_no }}</td>
+<td>{{ consumer.name }}</td>
+<td>{{ consumer.door_no }}</td>
+<td>{{ consumer.address }}</td>
+<td>{{ consumer.area }}</td>
+<td>{{ consumer.meter_no }}</td>
+<td>{{ consumer.category }}</td>
+<td>{{ consumer.status }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meter Reading</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="admin-layout">
+
+<div class="sidebar">
+
+<h2>⚡ Smart EB</h2>
+
+<a href="/admin-dashboard">🏠 Dashboard</a>
+<a href="/add-consumer">👥 Add Consumer</a>
+<a href="/view-consumer">📋 View Consumer</a>
+<a href="/house">🏠 House</a>
+<a href="/office">🏢 Office</a>
+<a href="/factory">🏭 Factory</a>
+<a href="/meter-reader">👷 Meter Reader</a>
+<a href="/meter-reading">📊 Meter Reading</a>
+<a href="/bill-calculation">💰 Bill Calculation</a>
+<a href="/payment">💳 Payment</a>
+<a href="/reports">📈 Reports</a>
+<a href="/">🚪 Logout</a>
+
+</div>
+
+<div class="dashboard-content">
+
+
+<div class="reading-header">
+
+<h1>📊 Meter Reading Management</h1>
+
+<p>
+Enter and manage electricity meter readings
+</p>
+
+</div>
+
+
+
+<div class="form-box">
+
+
+<form>
+
+
+<label>Consumer Number</label>
+
+<input type="text" placeholder="Enter Consumer Number">
+
+
+
+<label>Consumer Name</label>
+
+<input type="text" placeholder="Enter Consumer Name">
+
+
+
+<label>Meter Number</label>
+
+<input type="text" placeholder="Enter Meter Number">
+
+
+
+<label>Previous Reading</label>
+
+<input type="number" placeholder="Previous Units">
+
+
+
+<label>Current Reading</label>
+
+<input type="number" placeholder="Current Units">
+
+
+
+<label>Reading Date</label>
+
+<input type="date">
+
+
+
+<label>Meter Reader Name</label>
+
+<input type="text" placeholder="Enter Reader Name">
+
+
+
+<button type="submit">
+
+📊 Save Reading
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Consumer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+<div class="sidebar">
+
+<h2>⚡ Smart EB</h2>
+
+<a href="/dashboard-home">🏠 Dashboard</a>
+<a href="/add-consumer">👥 Add Consumer</a>
+<a href="/view-consumer">📋 View Consumer</a>
+<a href="/house">🏠 House</a>
+<a href="/office">🏢 Office</a>
+<a href="/factory">🏭 Factory</a>
+<a href="/meter-reader">👷 Meter Reader</a>
+<a href="/meter-reading">📊 Meter Reading</a>
+<a href="/bill-calculation">💰 Bill Calculation</a>
+<a href="/payment">💳 Payment</a>
+<a href="/reports">📈 Reports</a>
+<a href="/">🚪 Logout</a>
+
+</div>
+
+<div class="dashboard-content">
+
+<div class="form-header">
+
+<h1>👥 Add New Consumer</h1>
+
+<p>
+Register new electricity consumer details
+</p>
+
+</div>
+
+<div class="form-box">
+
+<form action="/add-consumer" method="POST">
+
+<label>Consumer Number</label>
+<input type="text" name="consumer_no" placeholder="Enter Consumer Number" required>
+
+<label>Consumer Name</label>
+<input type="text" name="name" placeholder="Enter Consumer Name" required>
+
+<label>Door Number</label>
+<input type="text" name="door_no" placeholder="Enter Door Number" required>
+
+<label>Address</label>
+<input type="text" name="address" placeholder="Enter Address" required>
+
+<label>City</label>
+<input type="text" name="city" placeholder="Enter City" required>
+
+<label>Mobile Number</label>
+<input type="text" name="mobile" placeholder="Enter Mobile Number" required>
+
+<label>Meter Number</label>
+<input type="text" name="meter_no" placeholder="Enter Meter Number" required>
+
+<label>Category</label>
+
+<select name="category" required>
+
+<option value="">Select Category</option>
+<option value="House">House</option>
+<option value="Office">Office</option>
+<option value="Factory">Factory</option>
+
+</select>
+
+<label>Status</label>
+
+<select name="status" required>
+
+<option value="">Select Status</option>
+<option value="Active">Active</option>
+<option value="Inactive">Inactive</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">
+⚡ Add Consumer
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

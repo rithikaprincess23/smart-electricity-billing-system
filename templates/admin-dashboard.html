@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Electricity Billing System</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+<div class="sidebar">
+
+<h2>⚡ Smart EB</h2>
+
+<a href="/admin-dashboard">🏠 Dashboard</a>
+<a href="/add-consumer">👥 Add Consumer</a>
+<a href="/view-consumer">📋 View Consumer</a>
+<a href="/house">🏠 House</a>
+<a href="/office">🏢 Office</a>
+<a href="/factory">🏭 Factory</a>
+<a href="/meter-reader">👷 Meter Reader</a>
+<a href="/meter-reading">📊 Meter Reading</a>
+<a href="/bill-calculation">💰 Bill Calculation</a>
+<a href="/payment">💳 Payment</a>
+<a href="/reports">📈 Reports</a>
+<a href="/">🚪 Logout</a>
+
+</div>
+
+<div class="dashboard-content">
+
+<div class="dashboard-header">
+
+<h1>⚡ Welcome Administrator</h1>
+<p>Add, update and manage electricity consumer details.</p>
+<br>
+
+<h3>📅 Today : 06 August 2026</h3>
+
+<p>⚡ Total Consumers : <b>120</b></p>
+<p>🏠 House : <b>100</b> | 🏢 Office : <b>10</b> | 🏭 Factory : <b>10</b></p>
+<p>👷 Active Meter Readers : <b>30</b></p>
+
+</div>
+
+<div class="dashboard-banner">
+
+<h2>⚡ Tamil Nadu Smart Electricity Board</h2>
+
+<p>
+Monitor electricity usage, generate bills, track payments and manage consumers easily from one place.
+</p>
+
+</div>
+
+<div class="dashboard-services">
+
+<a href="/add-consumer" class="service-box">
+<h2>👥 Consumer Management</h2>
+<p>
+➕ Add New Consumer<br>
+✏️ Edit Consumer Details<br>
+📋 View Consumer List<br>
+🔍 Search Consumer Records
+</p>
+</a>
+
+<a href="/meter-reading" class="service-box">
+<h2>📊 Meter Reading</h2>
+<p>
+📝 Enter Meter Reading<br>
+⚡ Calculate Units Used<br>
+📅 Monthly Reading Update<br>
+💾 Save Reading Details
+</p>
+</a>
+
+<a href="/bill-calculation" class="service-box">
+<h2>💰 Bill Calculation</h2>
+<p>
+⚡ Calculate Electricity Bill<br>
+💵 Generate Consumer Bill<br>
+🧾 Print Bill Receipt<br>
+📄 View Bill Details
+</p>
+</a>
+
+<a href="/payment" class="service-box">
+<h2>💳 Payment Tracking</h2>
+<p>
+💳 Bill Payment<br>
+📅 Payment Date<br>
+✅ Payment Status<br>
+📄 Payment History
+</p>
+</a>
+
+</div>
+
+<div class="dashboard-services">
+
+<a href="/reports" class="service-box">
+<h2>📈 Reports</h2>
+<p>
+📊 Consumer Reports<br>
+💰 Payment Reports<br>
+⚡ Bill Reports<br>
+📅 Monthly Reports
+</p>
+</a>
+
+<a href="/house" class="service-box">
+<h2>⚡ EB Services</h2>
+<p>
+🏠 House Connections<br>
+🏢 Office Connections<br>
+🏭 Factory Connections<br>
+👷 Meter Reader Details
+</p>
+</a>
+
+<a href="/reports" class="service-box">
+<h2>🔔 Notifications</h2>
+<p>
+🔔 New Consumer Alerts<br>
+⚡ Bill Generation Updates<br>
+💳 Payment Notifications<br>
+📊 Meter Reading Alerts
+</p>
+</a>
+
+<a href="/reports" class="service-box">
+<h2>🛠 System Status</h2>
+<p>
+🔔 New Consumer Alerts<br>
+⚡ Bill Generation Updates<br>
+💳 Payment Notifications<br>
+📊 Meter Reading Alerts
+</p>
+</a>
+
+</div>
+
+<div class="dashboard-services">
+
+<div class="service-box">
+
+<h2>📊 Today's Activity</h2>
+
+<p>👥 New Consumers : <b>5</b></p>
+<p>📊 Meter Readings Updated : <b>42</b></p>
+<p>💰 Bills Generated : <b>38</b></p>
+<p>💳 Payments Received : <b>₹18,450</b></p>
+
+</div>
+
+<div class="service-box">
+
+<h2>⚡ Electricity Usage Summary</h2>
+
+<p>🏠 House : <b>100 Connections</b></p>
+<p>🏢 Office : <b>10 Connections</b></p>
+<p>🏭 Factory : <b>10 Connections</b></p>
+<p>👷 Meter Readers : <b>30 Active</b></p>
+
+</div>
+
+<div class="service-box">
+
+<h2>🔔 Latest Notifications</h2>
+
+<p>✅ 120 Consumers Registered Successfully</p>
+<p>✅ 118 Bills Generated</p>
+<p>✅ Payment Records Updated</p>
+<p>✅ Smart EB System Running Normally</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="dashboard-header">
+
+<h2>⚡ Smart Electricity Billing System</h2>
+
+<p>
+Welcome to the Electricity Board Administration Portal.
+Manage Consumers, Meter Readings, Bill Calculation,
+Payments and Reports easily from one dashboard.
+</p>
+
+</div>
+
+<footer style="margin-top:30px;text-align:center;padding:20px;background:#0b63ce;color:white;border-radius:10px;">
+
+<h3>⚡ Smart Electricity Billing System</h3>
+
+<p>
+Developed for B.Com CA Final Year Project
+</p>
+
+<p>
+© 2026 Smart Electricity Billing System | All Rights Reserved
+</p>
+
+</footer>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Bill Receipt</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-content">
+
+<div class="dashboard-header">
+
+<h1>🧾 Electricity Bill Receipt</h1>
+
+<p>Consumer Electricity Bill Details</p>
+
+</div>
+
+<div class="form-box">
+
+<h2>Receipt</h2>
+
+<hr><br>
+
+<p><b>Consumer Number :</b> 0902457831</p>
+
+<p><b>Consumer Name :</b> V Ramesh</p>
+
+<p><b>Meter Number :</b> MSK742815</p>
+
+<p><b>Previous Reading :</b> 150 Units</p>
+
+<p><b>Current Reading :</b> 220 Units</p>
+
+<p><b>Units Consumed :</b> 70 Units</p>
+
+<p><b>Rate Per Unit :</b> ₹8</p>
+
+<h2>Total Amount : ₹560</h2>
+
+<br>
+
+<button onclick="window.print()">
+🖨 Print Receipt
+</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
